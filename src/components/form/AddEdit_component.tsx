@@ -8,7 +8,7 @@ const AddEditComponent: React.FC = () => {
 
   return (
     <div className="container-form">
-      <h2>{id ? "Edit Todo" : "Add Todo"}</h2>
+      <h2>{id ? "Edit Todo" : "Add Todos"}</h2>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
