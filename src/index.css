@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.container {
+  min-height: 87vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-container,
+.trash-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.todos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.todo {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255);
+}
+
+.todo-info {
+  height: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.todo-info h3 {
+  min-height: 40px;
+}
+
+.action_btns {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  gap: 5px;
+}
+
+#status_ {
+  font-weight: 500;
+}
+
+.status-pending {
+  font-size: 12px;
+  color: orange;
+  background-color: rgba(255, 166, 0, 0.2);
+  padding: 5px;
+}
+
+.status-overdue {
+  font-size: 12px;
+  color: blue;
+  background-color: rgba(0, 0, 255, 0.2);
+  padding: 5px;
+}
+
+.status-completed {
+  font-size: 12px;
+  font-size: 12px;
+  color: rgb(10, 142, 10);
+  background-color: rgba(0, 128, 0, 0.2);
+  padding: 5px;
+}
+
+.status-removed {
+  font-size: 12px;
+  color: red;
+  background-color: rgba(255, 0, 0, 0.2);
+  padding: 5px;
+}
+
+input {
+  outline: none;
+}
+
+.delete_btn {
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(255, 0, 0, 0.7);
+  font-weight: 500;
+}
+
+.complete_btn {
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.edit_btn,
+.restore_btn {
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+  color: white;
+  background-color: cornflowerblue;
+  font-weight: 500;
+}
+
+.container-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  color: cornflowerblue;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: cornflowerblue;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: calc(100% - 22px);
+}
+
+.save_btn {
+  padding: 10px 15px;
+  background-color: #6495ed;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.header {
+  background-color: #6495ed;
+  padding: 15px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.active {
+  color: yellow;
+}
+
+.non-active {
+  color: white;
+}
+
+.form-control {
+  position: relative;
+  padding: 12px;
+  display: flex;
+}
+
+.count {
+  position: absolute;
+  right: -13px;
+  top: -2px;
+  background-color: navy;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: cornflowerblue;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: cornflowerblue;
+}
+
+.empty_state {
+  margin-top: 50px;
+  color: cornflowerblue;
+  font-size: 30px;
+}

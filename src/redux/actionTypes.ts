@@ -1,0 +1,10 @@
+export const FETCH_TODOS = "todos/fetchTodos";
+export const FETCH_TRASH = "todos/fetchTrash";
+export const REMOVE_TODO = "todos/removeTodo";
+export const POST_TODO = "todos/postTodo";
+export const UPDATE_TODO = "todos/updateTodo";
+export const RESTORE_TODO = "todos/restoreTodo";
+export const MOVE_TO_TRASH = "todos/moveToTrash";
+export const MARK_AS_COMPLETED = "todos/markAsComplete";
+export const DELETE_FROM_TRASH = "todos/deleteFromTrash";
+export const GET_TODO = "todos/getTodo";
